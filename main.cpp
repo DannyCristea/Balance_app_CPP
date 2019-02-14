@@ -148,6 +148,7 @@ void Deposit(string customer, PERSON a[], int N)
 		{
 			a[i].Balance += deposit;
 			cout << "Now your new balance is " << fixed << setprecision(2) << a[i].Balance << endl;
+			NewCopy("data.txt", a, N);
 		}
 	}
 }
